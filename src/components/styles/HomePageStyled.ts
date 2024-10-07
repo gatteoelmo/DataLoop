@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const HomePageStyled = styled.div`
-    align-items: center;
+    padding: 100px 40px;
+    // align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;    
-    -webkit-touch-callout: none;
+    // flex-direction: column;
+    // height: 100vh;
+    // width: 100vw;    
+    // -webkit-touch-callout: none;
 `
