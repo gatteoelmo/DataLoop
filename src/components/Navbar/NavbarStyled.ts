@@ -7,15 +7,20 @@ export const NavbarStyled = styled.div`
     width: 100vw;
     height: 50px;
     
-    div {
+    .container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
 
-        a {
+        a, div {
             color: white;
             text-decoration: none;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
         }
     }
 
