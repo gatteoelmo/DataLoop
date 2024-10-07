@@ -18,7 +18,8 @@ export const Navbar = () => {
                 
                 <div>
                     <Link to="/">Home page</Link>
-                    <Link to="/Login">Login Page</Link>
+                    {!user && <Link to="/Login">Login Page</Link>}
+                    {user && <Link to="/createpost">Create post</Link>}
                 </div>
                 
                 <div>
@@ -26,10 +27,9 @@ export const Navbar = () => {
                         <>
                             <p>{user?.displayName}</p>
                             <img src={user?.photoURL || ""} alt="" />
-                            <button onClick={signUserOut}>Log Out</button>
+                            <button className="button-50" onClick={signUserOut}>Log Out</button>
                         </>
-                    )}
-                    
+                    )}                    
                 </div>
                 
             </div>           

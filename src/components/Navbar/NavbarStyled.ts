@@ -42,6 +42,47 @@ export const NavbarStyled = styled.div`
                 border: none;
                 cursor: pointer;
             }
+
+            .button-50 {
+                appearance: button;
+                background-color: #1C1C1C;
+                background-image: none;
+                border: 1px solid #ECEBE4;
+                border-radius: 4px;
+                box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                text-transform: none;
+                touch-action: manipulation;
+                user-select: none;
+                -webkit-user-select: none;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+    
+            .button-50:focus {
+                text-decoration: none;
+            }
+    
+            .button-50:hover {
+                text-decoration: none;
+            }
+    
+            .button-50:active {
+                box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+                outline: 0;
+            }
+    
+            .button-50:not([disabled]):active {
+                box-shadow: #ECEBE4 2px 2px 0 0, #000 2px 2px 0 1px;
+                transform: translate(2px, 2px);
+            }
+    
+            @media (min-width: 768px) {
+                .button-50 {
+                }
+            
         }
     }
 

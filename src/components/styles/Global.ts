@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         -webkit-touch-callout: none;
+        user-select: none;
         color: #1C1C1C;
     }
 

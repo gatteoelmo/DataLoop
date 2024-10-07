@@ -7,4 +7,5 @@ export const HomePageStyled = styled.div`
     justify-content: center;
     height: 100vh;
     width: 100vw;    
+    -webkit-touch-callout: none;
 `

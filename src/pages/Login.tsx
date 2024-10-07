@@ -2,6 +2,7 @@ import { LoginPageStyled } from '../components/styles/LoginStyled.ts'
 import { auth , provider } from '../config/firebase.ts'
 import { signInWithPopup } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
+import Googlelogo from '../assets/googlelogo_color_272x92dp.png'
 
 export default function Login() {
 
@@ -14,10 +15,8 @@ export default function Login() {
     }
 
     return (
-        <LoginPageStyled>
-            <p>Sign in with Google to continue.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="" />
-            <button onClick={signInWithGoogle}>Sign in with Google</button>
+        <LoginPageStyled>            
+            <button className='button-50' onClick={signInWithGoogle}><div>Sign in with <img src={Googlelogo} alt="" /></div></button>
         </LoginPageStyled>
     )
 }
