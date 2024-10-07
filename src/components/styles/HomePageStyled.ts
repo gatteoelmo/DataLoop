@@ -6,6 +6,5 @@ export const HomePageStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
-    color: white;       
+    width: 100vw;    
 `

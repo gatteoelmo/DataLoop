@@ -7,5 +7,14 @@ export const LoginPageStyled = styled.div`
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    color: white;       
+    
+    button {
+        padding: 10px 20px;
+        color: #ECEBE4;
+        border-radius: 20px;
+        margin: 10px 0;
+        background-color: #1C1C1C;
+        border: none;
+        cursor: pointer;
+    }
 `
