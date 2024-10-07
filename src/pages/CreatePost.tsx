@@ -1,7 +1,11 @@
+import { CreatePostStyled } from "../components/styles/CreatePost/CreatePost"
+
 export default function CreatePost() {
     return (
-        <div>
-            <h1>Create Post</h1>
-        </div>
+        <CreatePostStyled>
+            <form action="">
+                
+            </form>
+        </CreatePostStyled>
     )
 }
