@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store.ts';
 import Home from './pages/Home'
 import Login from './pages/Login'
-import CreatePost from './pages/CreatePost.tsx';
+import CreatePost from './pages/CreatePosts/CreatePost.tsx';
 import { Navbar } from './components/Navbar/Navbar'
 import { GlobalStyles } from './components/styles/Global'
 
