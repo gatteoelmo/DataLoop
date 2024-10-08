@@ -50,7 +50,7 @@ export const CreateForm = () => {
                 <p style={{color: 'red'}}>{errors.title?.message}</p>
                 <textarea placeholder="description..." {...register('description')} />
                 <p style={{color: 'red'}}>{errors.description?.message}</p>
-                <input className="submit" type="submit" onClick={(e) => {
+                <input className="submit" type="submit" onClick={() => {
   console.log('Pulsante di submit cliccato')}} />
             </div>
             

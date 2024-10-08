@@ -31,6 +31,7 @@ export const CreateFormStyled = styled.div`
             font-size: 16px;
             padding: 10px 2px;
             font-family: "Montserrat", sans-serif;
+            color: #ECEBE4;
         }
 
         
@@ -40,6 +41,7 @@ export const CreateFormStyled = styled.div`
             padding: 10px 20px;
             border-radius: 10px;
             margin-top: 20px;
+            color: #1C1C1C;
         }
 
         .submit:hover {
