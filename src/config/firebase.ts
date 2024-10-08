@@ -7,13 +7,13 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBaRUOMQwRM6BJOpwILFX4pHwaaOiOkruQ",
-  authDomain: "snaply-8314f.firebaseapp.com",
-  projectId: "snaply-8314f",
-  storageBucket: "snaply-8314f.appspot.com",
-  messagingSenderId: "584048904504",
-  appId: "1:584048904504:web:02c0dfe7b3ed458484d9cd"
-};
+    apiKey: "AIzaSyBaRUOMQwRM6BJOpwILFX4pHwaaOiOkruQ",
+    authDomain: "snaply-8314f.firebaseapp.com",
+    projectId: "snaply-8314f",
+    storageBucket: "snaply-8314f.appspot.com",
+    messagingSenderId: "584048904504",
+    appId: "1:584048904504:web:02c0dfe7b3ed458484d9cd"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

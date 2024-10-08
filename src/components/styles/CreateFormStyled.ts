@@ -43,5 +43,9 @@ export const CreateFormStyled = styled.div`
             margin-top: 20px;
             color: #1C1C1C;
         }
+
+        .submit:hover {
+            cursor: pointer;
+        }
     }
 `
