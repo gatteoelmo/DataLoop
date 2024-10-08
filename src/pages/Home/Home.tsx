@@ -3,7 +3,7 @@ import { HomePageStyled } from '../../components/styles/HomePageStyled.ts'
 import {getDocs, collection} from 'firebase/firestore'
 import { db } from '../../config/firebase.ts'
 import { useEffect, useState } from 'react'
-import { Post } from './IPost.tsx';
+import { Post } from './IPost.tsx'
 
 
 export interface Post {
