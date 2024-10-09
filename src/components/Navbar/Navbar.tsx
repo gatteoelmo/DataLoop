@@ -4,7 +4,7 @@ import {auth} from "../../config/firebase"
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { signOut } from 'firebase/auth'
 import Logo from '../../assets/LOGO-SNAPLY.svg'
-import { ButtonSpin } from "../Card/ButtonSpin"
+import  ButtonSpin from "../Card/ButtonSpin"
 
 
 export const Navbar = () => {
