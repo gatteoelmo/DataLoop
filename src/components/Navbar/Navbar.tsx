@@ -4,7 +4,7 @@ import {auth} from "../../config/firebase"
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { signOut } from 'firebase/auth'
 import Logo from '../../assets/LOGO-SNAPLY.svg'
-import  ButtonSpin from "../Card/ButtonSpin"
+import { ButtonSpin } from "../Card/ButtonSpin"
 
 
 export const Navbar = () => {
@@ -33,7 +33,7 @@ export const Navbar = () => {
                         </li>
                     )}
                 
-                <li className="signout">{user && <button onClick={signUserOut}>Log Out</button>}</li>
+                <li className="signout">{user && <Link to="/"><button onClick={() => {signUserOut()}}>Log Out</button></Link>}</li>
             </ul>
         </div>
         <div className="media_button">

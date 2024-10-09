@@ -1,12 +1,13 @@
 
 import { HomePageStyled } from '../../components/styles/HomePageStyled.ts'
 import {getDocs, collection} from 'firebase/firestore'
-import { db } from '../../config/firebase.ts'
+import { auth, db } from '../../config/firebase.ts'
 import { useEffect, useState } from 'react'
 import { Post } from './IPost.tsx'
 // import START from '../../assets/START.svg'
 // import CHAT from '../../assets/CHAT.svg'
 import SPIN from '../../assets/SPIN.svg'
+import { useAuthState } from 'react-firebase-hooks/auth'
 
 
 export interface Post {
@@ -31,11 +32,11 @@ export default function Home() {
     getPosts();
   }, []);
 
+  const [user] = useAuthState(auth);
+
   return (
     <HomePageStyled>
-      {/* <div className='img'>
-        <img src={CHAT} alt="" />
-      </div> */}
+      {!user && <div className='welcome'>"Welcome to Snaply! <br /> Share your thoughts and connect with the world. <br />Your ideas &#128161; matter!"</div>}
       <div> 
         {postsList?.map((post) => 
         <Post post={post}/>

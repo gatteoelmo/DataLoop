@@ -1,6 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
 const rotateText = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
   to {
     transform: rotate(360deg);
   }
@@ -10,7 +13,7 @@ export const ButtonSpinContainer = styled.div`
   position: fixed;
   bottom: 1%;
   right: 1%;
-  scale: 0.6;
+  scale: 0.5;
 
 
   .circle {
@@ -47,13 +50,14 @@ export const ButtonSpinContainer = styled.div`
     color: #000;
     animation: ${rotateText} 10s linear infinite;
     overflow: hidden;
+    font-size: 1.3em;
+    
+    span {
+      font-family: Montserrat, sans-serif;
+      position: absolute;
+      left: 50%;
+      transform-origin: 0 100px;
+    }
   }
 
-  .text span {
-    font-family: Montserrat, sans-serif;
-    position: absolute;
-    left: 50%;
-    font-size: 1.2em;
-    transform-origin: 0 100px;
-  }
 `;
