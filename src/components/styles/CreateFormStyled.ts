@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-export const CreateFormStyled = styled.form`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    
+export const CreateFormStyled = styled.div`
     div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    
+    
+    form {
         color: #ECEBE4;
         background-color: #1C1C1C;
         padding: 30px;
@@ -44,4 +46,8 @@ export const CreateFormStyled = styled.form`
             color: #1C1C1C;
         }
     }
+    
+    
+    
+    
 `

@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const HomePageStyled = styled.div`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;    
-    -webkit-touch-callout: none;
+margin-top: 70px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+-webkit-touch-callout: none;
+
+.img{
+    img{
+            margin-top: 130px;
+            width:300px;
+            margin-bottom: 200px;
+        }
+    }   
 `

@@ -4,6 +4,9 @@ import {getDocs, collection} from 'firebase/firestore'
 import { db } from '../../config/firebase.ts'
 import { useEffect, useState } from 'react'
 import { Post } from './IPost.tsx'
+// import START from '../../assets/START.svg'
+// import CHAT from '../../assets/CHAT.svg'
+import SPIN from '../../assets/SPIN.svg'
 
 
 export interface Post {
@@ -30,9 +33,16 @@ export default function Home() {
 
   return (
     <HomePageStyled>
-      <div> {postsList?.map((post) => 
+      {/* <div className='img'>
+        <img src={CHAT} alt="" />
+      </div> */}
+      <div> 
+        {postsList?.map((post) => 
         <Post post={post}/>
       )}
+      </div>
+      <div className='img'>
+        <img src={SPIN} alt="" />
       </div>
     </HomePageStyled>
   )

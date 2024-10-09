@@ -1,4 +1,4 @@
-
+import { CreateFormStyled } from "../../components/styles/CreateFormStyled";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -42,12 +42,17 @@ export const CreateForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onCreatePost)}>
-      <input placeholder="Title..." {...register("title")} />
-      <p style={{ color: "red" }}> {errors.title?.message}</p>
-      <textarea placeholder="Description..." {...register("description")} />
-      <p style={{ color: "red" }}> {errors.description?.message}</p>
-      <input type="submit" className="submitForm" />
-    </form>
+    <CreateFormStyled>
+        <div>
+            <form onSubmit={handleSubmit(onCreatePost)}>
+                <label htmlFor="title">Create a new post</label>
+                <input placeholder="Title..." {...register("title")} />
+                <p style={{ color: "red" }}> {errors.title?.message}</p>
+                <textarea placeholder="Description..." {...register("description")} />
+                <p style={{ color: "red" }}> {errors.description?.message}</p>
+                <input type="submit" className="submitForm" />
+            </form>
+        </div>
+    </CreateFormStyled>
   );
 };

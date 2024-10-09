@@ -1,20 +1,55 @@
 import styled from "styled-components";
 
 export const PostStyled = styled.div`
-    width: 500px;
-    border-radius: 10px;
+    max-width: 350px;
+    min-width: 290px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #ECEBE9;
+    margin: 40px 20px;
+    box-shadow: 10px 10px  rgba(0,0,0,0.85);
     
-    .title, .description, .footer {
-        margin-bottom: 20px;
+    .user, .title, .description, .footer {
+        padding: 20px;
+        
     }
 
-    button {
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: none;
-        font-size: 20px;
-        margin-top: 10px;
+    .description {
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
+    .footer {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+         button {
+            overflow-y: hidden;
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+    }
+    }
+        
+    .user {
+    
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+
+   
 `

@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     * {
+        overflow-x: hidden;
+        // overflow-y: hidden;
         box-sizing: border-box;
         padding: 0;
         margin: 0;
