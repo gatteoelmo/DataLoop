@@ -87,8 +87,8 @@ import {
     return (
       <PostStyled>
         <div className="user">
-            <img src={user?.photoURL || ""} alt="" />
-            <p> @{post.username} </p>
+            {/* <img src={post.photoURL || ""} alt="" /> */}
+            <p> @{post.username.replace(/ /g, '_')} </p>
         </div>
         <div className="title">
           <h1> {post.title}</h1>

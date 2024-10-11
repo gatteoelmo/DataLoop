@@ -21,7 +21,7 @@ export const ButtonSpin: React.FC = () => {
                 <div className="logo"><img src={CHAT} ></img></div>
                 
                 <div className="text">
-                    <p> LET'S - CREATE - POST - </p>
+                    <p>CREATE - POST - CREATE - POST - </p>
                 </div>
             </div>
       </Link>
